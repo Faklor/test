@@ -342,19 +342,118 @@ body{
 
 @media screen and (max-width: 1450px){
     
-    .container{
-
-    }
-    header{
-        .header{
-            .logo{
+    body{
+        .container{
+            width: 320px;
+        }
+        header{
+            //width: auto
+            position: absolute;
+            display: block;
+            .header{
+                display: block;
+                margin: 0 auto;
+                width: 320px;
                 
+                gap:0;
+                .logo{
+                    
+                    justify-content: center;
+                }
+                .navigation{
+                    //display: none;
+                    gap: 10px;
+                    margin-top: 2em;
+                    font-size: 10px;
+                    justify-content: center;
+                }
             }
-            .navigation{
-                display: none;
+            
+    
+        }
+        main{
+            .content{
+                .main{
+                    h1{
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .c1{
+                h2{
+                    text-align: center;
+                    font-size: 18px;
+                }
+                ul{
+                    list-style: none;
+                    text-align: center;
+                    color: #868686;
+                    li{
+                        font-size: 16px;
+                    }
+                }
+                .controlls{
+                    button{
+                        width: 100%;
+                        margin:1em 0;
+                        &:nth-child(2){
+                            background-color: #FFF;
+                        }
+                    }
+                    padding-bottom: 6em;
+                }
+            }
+            .c2{
+                .status{
+                    grid-template-columns: 1fr;
+                    margin-top: 0;
+                    .item{
+                        margin:2em 0;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                }
+                form{
+                    margin-top: 30px;
+                    display: block;
+
+                    select, .sumbit{
+                        margin: 0.5em;
+                    }
+                    input{
+                        margin:0.5em 0;
+                    }
+                    .range{
+                        input{
+                            width: 320px;
+                        }
+                        
+                    }
+                }
             }
         }
-        
-
+        footer{
+            height: 100%;
+            .footer{
+                padding: 1em;
+                grid-template-columns: 1fr;
+                .certificate, .pay_list, .contacts{
+                    border: none;
+                    border-bottom: 1px solid #C3C3C3;
+                    padding-bottom: 2em;
+                    text-align: center;
+                    margin:1em;
+                }
+                .contacts{
+                    display: block;
+                    padding-bottom: 0;
+                    a{
+                        margin: 1em;
+                    }
+                }
+            }
+        }
     }
 }

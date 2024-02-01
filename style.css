@@ -363,7 +363,102 @@ body footer .footer .certificate:nth-child(3), body footer .footer .pay_list:nth
 }
 
 @media screen and (max-width: 1450px) {
-  header .header .navigation {
+  body .container {
+    width: 320px;
+  }
+  body header {
+    position: absolute;
+    display: block;
+  }
+  body header .header {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    gap: 0;
+  }
+  body header .header .logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body header .header .navigation {
+    gap: 10px;
+    margin-top: 2em;
+    font-size: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main .content .main h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  body main .c1 h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  body main .c1 ul {
+    list-style: none;
+    text-align: center;
+    color: #868686;
+  }
+  body main .c1 ul li {
+    font-size: 16px;
+  }
+  body main .c1 .controlls {
+    padding-bottom: 6em;
+  }
+  body main .c1 .controlls button {
+    width: 100%;
+    margin: 1em 0;
+  }
+  body main .c1 .controlls button:nth-child(2) {
+    background-color: #FFF;
+  }
+  body main .c2 .status {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+  body main .c2 .status .item {
+    margin: 2em 0;
+  }
+  body main .c2 .status .item::before {
     display: none;
+  }
+  body main .c2 form {
+    margin-top: 30px;
+    display: block;
+  }
+  body main .c2 form select, body main .c2 form .sumbit {
+    margin: 0.5em;
+  }
+  body main .c2 form input {
+    margin: 0.5em 0;
+  }
+  body main .c2 form .range input {
+    width: 320px;
+  }
+  body footer {
+    height: 100%;
+  }
+  body footer .footer {
+    padding: 1em;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  body footer .footer .certificate, body footer .footer .pay_list, body footer .footer .contacts {
+    border: none;
+    border-bottom: 1px solid #C3C3C3;
+    padding-bottom: 2em;
+    text-align: center;
+    margin: 1em;
+  }
+  body footer .footer .contacts {
+    display: block;
+    padding-bottom: 0;
+  }
+  body footer .footer .contacts a {
+    margin: 1em;
   }
 }
